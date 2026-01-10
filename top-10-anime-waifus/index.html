@@ -60,9 +60,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header id="floatingHeader">
+  <a href="https://smashsenpai.github.io" class="logo">
+    Smash Senpai
+  </a>
+</header>
 
 
-<main>
+<div class="page-layout">
+
+<main class="article-content">
+
 
 <!-- INTRO / BRAND SECTION -->
 <section class="intro">
@@ -75,7 +83,7 @@
   </p>
 </section>
 <!-- ===== NATIVE AD ===== -->
-     <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
+  <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <section class="ad-section ad-native">
   <script async="async" data-cfasync="false" src="https://pl28443061.effectivegatecpm.com/8501c4cabab647af73c52f127e57a3fb/invoke.js"></script>
   <div id="container-8501c4cabab647af73c52f127e57a3fb"></div>
@@ -133,8 +141,8 @@
     Her dynamic with Hiro forms the emotional core of the anime, blending romance, pain, and obsession. Zero Two’s unapologetic attitude and rebellious nature made her a symbol of freedom and emotional intensity. Even years after the anime aired, she remains a dominant presence in anime culture, fan art, and discussions about legendary waifus.
   </p>
 </section>
+    <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <!-- ===== BANNER 300x250 ===== -->
-     <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <section class="ad-section">
   <script>
     atOptions = {
@@ -172,8 +180,8 @@
     What truly elevates Rem is her emotional depth and resilience. She confronts trauma, self-doubt, and despair while maintaining kindness and strength. Her famous confession scene remains one of the most emotionally impactful moments in modern anime, solidifying her status as a fan-favorite waifu.
   </p>
 </section>
+    <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <!-- ===== BANNER 320x50 ===== -->
-     <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <section class="ad-section">
   <script>
     atOptions = {
@@ -211,8 +219,8 @@
     Hinata’s appeal lies in her sincerity and loyalty. She represents emotional warmth rather than dominance or aggression, making her one of the most beloved characters in the Naruto franchise. Her growth into a confident kunoichi and partner solidified her long-term fan appeal.
   </p>
 </section>
+    <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <!-- ===== BANNER 160x300 ===== -->
-     <p style="font-size:12px;opacity:0.6;text-align:center;">Sponsored</p>
 <section class="ad-section">
   <script>
     atOptions = {
@@ -293,13 +301,38 @@
     PLAY SMASH OR PASS
   </a>
 </section>
-
-
 </main>
 
-<footer>
-  <p>© 2026 SMASH Senpai • Anime Rankings & Smash or Pass</p>
+<aside class="trending">
+  <h3>Trending Now</h3>
+
+  <!-- Later you will add article cards here -->
+</aside>
+
+</div>
+
+
+
+<footer class="site-footer">
+  <p>© 2026 SMASH Senpai · Anime Rankings & Smash or Pass</p>
 </footer>
+
+<script>
+let lastScroll = 0;
+const header = document.getElementById("floatingHeader");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll && currentScroll > 100) {
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
+</script>
 
 
 </body>
