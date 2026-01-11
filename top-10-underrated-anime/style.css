@@ -456,4 +456,18 @@ filter: brightness(1.05);
 
   letter-spacing: 0.5px;
 }
+.article-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+}
+
 
