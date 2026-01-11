@@ -442,5 +442,20 @@ filter: brightness(1.05);
   padding: 30px 0;
   font-size: 14px;
 }
+.article-title {
+  font-family: 'Playfair Display', 'Georgia', cursive;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0 30px;
+  
+  /* Color + gradient */
+  background: linear-gradient(90deg, #624dff, #ff9ae5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 0.5px;
+}
+
 
 
