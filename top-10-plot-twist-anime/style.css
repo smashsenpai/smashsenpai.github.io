@@ -1,0 +1,472 @@
+/* =============================
+   SMASH SENPAI – GLOBAL STYLES
+   ============================= */
+
+:root {
+  --bg: #0b0b12;
+  --card: #141422;
+  --text: #e9e9ff;
+  --muted: #a1a1c7;
+  --accent: #ff4dd8;
+  --accent-2: #6b6bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =============================
+   HEADER
+   ============================= */
+
+header {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #ff4dd8, #6b6bff);
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0;
+  font-weight: 900;
+}
+
+header p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* =============================
+   INTRO / BRAND
+   ============================= */
+
+.intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.brand-script {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-family: 'Brush Script MT', 'Segoe Script', cursive;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+/* =============================
+   MAIN CONTENT
+   ============================= */
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.waifu-entry {
+  background: var(--card);
+  margin: 50px 20px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.waifu-entry h2 {
+  font-size: 1.9rem;
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.waifu-entry img {
+  border-radius: 16px;
+  margin: 25px 0;
+}
+
+.waifu-entry p {
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+/* =============================
+   CTA SECTION
+   ============================= */
+
+
+
+.cta p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* =============================
+   FUTURE SECTIONS
+   ============================= */
+
+.future-section,
+.promo {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.promo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promo li {
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+
+footer {
+  text-align: center;
+  padding: 30px 15px 50px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+
+@media (max-width: 600px) {
+  .waifu-entry {
+    padding: 25px 20px;
+  }
+}
+/* =============================
+   COMPACT CTA WITH MASCOT
+   ============================= */
+
+.cta-compact {
+  padding: 25px;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.cta-text {
+  text-align: left;
+}
+
+.cta-text p {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.disclaimer {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text {
+    text-align: center;
+  }
+
+ 
+}
+.promo-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #ff4dd8, #ff006a);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+
+
+
+/* Promo button hover */
+.promo a,
+.promo-link {
+transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+
+.promo a:hover,
+.promo-link:hover {
+transform: translateY(-3px);
+box-shadow: 0 12px 30px rgba(255,77,216,0.4);
+filter: brightness(1.05);
+}
+/* =============================
+   FLOATING MASCOT
+   ============================= */
+
+.mascot-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 90px;
+  z-index: 999;
+  animation: floatMascot 4s ease-in-out infinite;
+}
+
+.mascot-float img {
+  width: 100%;
+  filter: drop-shadow(0 12px 25px rgba(0,0,0,0.5));
+}
+
+/* =============================
+   CTA SECTION (UPDATED)
+   ============================= */
+
+.cta {
+  margin: 70px 20px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff4dd8, #ff006a);
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+
+
+.cta-text p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.cta-note {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.cta a:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Floating animation */
+@keyframes mascotFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  
+}
+.cta-mascot {
+  width: 90px;
+  flex-shrink: 0;
+  animation: mascotFloat 3.5s ease-in-out infinite;
+}
+.waifu-entry img {
+  width: 100%;
+  height: 420px;              /* desktop uniform height */
+  object-fit: cover;          /* crop instead of stretch */
+  border-radius: 16px;
+  margin: 25px 0;
+}
+@media (max-width: 600px) {
+  .waifu-entry img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+/* === ADS === */
+.ad-section {
+  margin: 28px auto;
+  text-align: center;
+}
+
+.ad-native {
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+.ad-native iframe,
+.ad-native div {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ad-native {
+    max-width: 100%;
+  }
+}
+#floatingHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1a0b2e, #120818);
+  padding: 14px 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid rgba(255, 77, 216, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+#floatingHeader.hide {
+  transform: translateY(-100%);
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ff4dd8;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 12px rgba(255, 77, 216, 0.45);
+}
+
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.trending {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+  background: #0f0f15;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.trending h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .trending {
+    position: static;
+    margin-top: 40px;
+  }
+}
+.article-content {
+  padding-top: 80px;
+}
+.site-footer {
+  text-align: center;
+  opacity: 0.6;
+  padding: 30px 0;
+  font-size: 14px;
+}
+.article-title {
+  font-family: 'Playfair Display', 'Georgia', cursive;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0 30px;
+  
+background: linear-gradient(90deg, #624dff, #ff9ae5);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+  letter-spacing: 0.5px;
+}
+.article-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+}
