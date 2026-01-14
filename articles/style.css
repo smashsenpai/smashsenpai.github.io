@@ -165,4 +165,24 @@ body {
   }
 
 }
+.ad-section {
+  margin: 28px auto;
+  text-align: center;
+}
 
+.ad-native {
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+.ad-native iframe,
+.ad-native div {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ad-native {
+    max-width: 100%;
+  }
+}
